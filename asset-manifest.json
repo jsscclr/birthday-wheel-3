@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/birthday-wheel-3/static/css/main.acb2c0ed.chunk.css",
-    "main.js": "/birthday-wheel-3/static/js/main.40ca5e7d.chunk.js",
-    "main.js.map": "/birthday-wheel-3/static/js/main.40ca5e7d.chunk.js.map",
+    "main.js": "/birthday-wheel-3/static/js/main.66d501c5.chunk.js",
+    "main.js.map": "/birthday-wheel-3/static/js/main.66d501c5.chunk.js.map",
     "runtime-main.js": "/birthday-wheel-3/static/js/runtime-main.dddd47ce.js",
     "runtime-main.js.map": "/birthday-wheel-3/static/js/runtime-main.dddd47ce.js.map",
     "static/js/2.a569c632.chunk.js": "/birthday-wheel-3/static/js/2.a569c632.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.dddd47ce.js",
     "static/js/2.a569c632.chunk.js",
     "static/css/main.acb2c0ed.chunk.css",
-    "static/js/main.40ca5e7d.chunk.js"
+    "static/js/main.66d501c5.chunk.js"
   ]
 }
