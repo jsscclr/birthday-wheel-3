@@ -1,0 +1,11 @@
+.root {
+    background: #d46be4;
+    color: rgb(229, 239, 83);
+    font-family: 'Gatwick Bold', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+
+    animation: fadeIn 2s;
+}

@@ -56,6 +56,7 @@ a:hover {
     justify-content: center;
     flex-direction: column;
 }
+
 body {
     flex-direction: row;
     margin: 0;
@@ -66,6 +67,7 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: -0.015em;
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -78,8 +80,4 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: #101c38;
-}
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

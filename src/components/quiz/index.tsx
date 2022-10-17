@@ -60,28 +60,33 @@ const items = [
 // 6 - 7 points => Messina
 // 8 points => Provider
 // 9 - 14 points => Wine
-type props = {
-  continueShowMessage: () => void,
-}
+type Props = {
+  continueShowMessage: () => void;
+  onPrizeChange: (prize: string) => void;
+};
 
-export const Quiz: React.FC<props>  = ({continueShowMessage}) => {
+export const Quiz = ({ continueShowMessage, onPrizeChange }: Props) => {
   const [points, setPoints] = useState(0);
   const [counter, setCounter] = useState(0);
   const prize = useMemo(() => {
     if (points === 2) {
-      return 'book';
+      return 'Book';
     }
 
     if (points > 2 && points < 6) {
-      return 'uber eats';
+      return 'Uber Eats';
     }
 
     if (points > 5 && points < 8) {
-      return 'messina';
+      return 'Messina';
     }
 
     if (points === 8) {
-      return 'provider';
+      return 'Provider';
+    }
+
+    if (points > 8) {
+      return 'Wine';
     }
 
     return '';
@@ -90,6 +95,7 @@ export const Quiz: React.FC<props>  = ({continueShowMessage}) => {
   useEffect(() => {
     if (counter === 2) {
       console.log(prize);
+      onPrizeChange(prize);
     }
   }, [counter, prize]);
 
@@ -115,7 +121,10 @@ export const Quiz: React.FC<props>  = ({continueShowMessage}) => {
           unavailable={counter === 2}
         />
       ))}
-      <button onClick={continueShowMessage} className={classnames(styles.continueButton, { [styles.visible]: counter === 2 })}>
+      <button
+        onClick={continueShowMessage}
+        className={classnames(styles.continueButton, { [styles.visible]: counter === 2 })}
+      >
         Continue
       </button>
     </div>

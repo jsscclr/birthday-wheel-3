@@ -1,0 +1,57 @@
+.root {
+    background: #e5ef53;
+    color: #d46be4;
+    font-family: 'Gatwick Bold', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5em;
+    font-size: 5vw;
+}
+
+.fadeout {
+    background: #e5ef53;
+    color: #d46be4;
+    font-family: 'Gatwick Bold', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5em;
+    font-size: 5vw;
+    opacity: 0;
+    transition: all 50ms linear 1s;
+}
+
+label {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+h1,
+label {
+    font-size: 5vw;
+}
+a {
+    font-size: 12px;
+}
+
+.input {
+    border: none;
+    border-bottom: 2px solid #d46be4;
+    color: rgb(229, 239, 83);
+    display: inline;
+    /* margin-bottom: 5px; */
+    padding: 0.1em;
+    width: 35vw;
+    height: 5vw;
+    font-size: 5vw;
+    max-width: 90vw;
+    background: #d46be4;
+    font-family: 'Gatwick Bold', sans-serif;
+}
